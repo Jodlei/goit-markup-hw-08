@@ -603,7 +603,6 @@ img {
   }
 
   .auth-nav__link {
-    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -613,13 +612,9 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
-  .auth-nav__link--mail {
-    padding-top: 20px;
-  }
-
-  .auth-nav__link--tel {
-    padding-bottom: 20px;
+@media screen and (max-width: 1199.5px) {
+  .auth-nav__item:nth-child(1) {
+    margin-bottom: 10px;
   }
 }
 .auth-nav__link {
@@ -638,6 +633,17 @@ img {
   transform: scaleX(1);
 }
 
+@media screen and (max-width: 1199.5px) {
+  .auth-nav__link--mail {
+    padding-top: 21px;
+    line-height: 1.16;
+  }
+
+  .auth-nav__link--tel {
+    padding-bottom: 21px;
+    line-height: 1.16;
+  }
+}
 .hero {
   color: var(--basic-color-white);
   background-color: var(--second-background-color);
