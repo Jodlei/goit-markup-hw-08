@@ -1300,8 +1300,6 @@ img {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: auto;
-    margin-right: auto;
     gap: 30px;
   }
 }
