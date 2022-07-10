@@ -1311,6 +1311,11 @@ img {
 .portfolio__item {
   width: 450px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: 354px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: 370px;
@@ -1319,7 +1324,6 @@ img {
 
 .portfolio__link {
   display: block;
-  width: 450px;
   height: 100%;
   background-color: var(--basic-color-white);
   cursor: pointer;
@@ -1327,11 +1331,6 @@ img {
 }
 .portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-@media screen and (min-width: 768px) {
-  .portfolio__link {
-    width: 354px;
-  }
 }
 
 .portfolio__inform-block {
