@@ -24,7 +24,8 @@
   }
 }
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   background-color: var(--basic-color-white);
   cursor: pointer;
@@ -36,10 +37,10 @@
   }
 }
 .portfolio__inform-block {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
-  height: 146px;
 }
 .portfolio__title {
   font-weight: 700;
@@ -73,9 +74,7 @@
 }
 .portfolio__thumb {
   position: relative;
-  z-index: 1;
   overflow: hidden;
-  width: 100%;
 }
 .overlay__text {
   font-style: normal;
