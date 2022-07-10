@@ -4,13 +4,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // background-image: linear-gradient(
-  //     rgba(47, 48, 58, 0.4),
-  //     rgba(47, 48, 58, 0.4)
-  //   ),
-  //   url(../images/hero.jpg);
-  // min-height: 400px;
-  // min-width: 480px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+
   margin-bottom: 0;
   margin-top: 0;
   margin-left: auto;
@@ -19,7 +18,7 @@
   padding-bottom: 118px;
   text-align: center;
 }
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -38,7 +37,7 @@
   margin-right: auto;
   margin-bottom: 30px;
 }
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
