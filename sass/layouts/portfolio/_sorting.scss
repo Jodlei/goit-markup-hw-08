@@ -1,15 +1,20 @@
 .sorting__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: -8px;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
-.sorting__item:not(:first-child) {
-  margin-left: 8px;
+.sorting__item {
+  margin: 8px;
 }
 .sorting__btn,
 .sorting__btn--current {
   min-width: 73px;
-  padding: 6px 22px;
   background-color: var(--btn-background);
   color: var(--first-text-color);
   box-shadow: none;
@@ -20,6 +25,9 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    padding: 6px 22px;
+  }
 }
 .sorting__btn:hover,
 .sorting__btn:focus {

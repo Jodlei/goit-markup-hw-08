@@ -4,8 +4,8 @@
   border: none;
   background-color: rgba(0, 0, 0, 0);
   margin-left: auto;
-  z-index: 100;
-  @media screen and (min-width: $tablet) {
+  z-index: 999;
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -15,7 +15,7 @@
     display: block;
   }
 }
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: 768px) {
   .cross-icon,
   .menu-icons {
     display: none;
@@ -47,12 +47,12 @@
   .menu__container {
     display: none;
     position: fixed;
+    z-index: 100;
     top: 0;
     width: 100vw;
     height: 100vh;
     left: 0;
     padding: 48px 10px 48px 40px;
-    left: 0;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
