@@ -432,7 +432,7 @@ img {
   margin-bottom: auto;
 }
 
-.menu__nav-item:not(:last-child) {
+.menu__nav-item {
   margin-bottom: 32px;
 }
 
@@ -1326,9 +1326,6 @@ img {
   }
 }
 
-.portfolio__item {
-  width: 450px;
-}
 .portfolio__item:not(:last-child) {
   margin-bottom: 30px;
 }
