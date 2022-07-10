@@ -1042,6 +1042,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__addres {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -1119,6 +1120,7 @@ img {
   .contact-footer {
     margin-right: auto;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
