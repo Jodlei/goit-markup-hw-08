@@ -64,7 +64,9 @@
     fill: var(--accent-color);
   }
 }
-
+.modal__icon {
+  fill: #000000;
+}
 .modal__text {
   font-style: normal;
   font-weight: 700;
