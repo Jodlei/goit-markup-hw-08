@@ -35,7 +35,6 @@
     display: none;
   }
 }
-
 .is-open {
   top: 21px;
   right: 25px;
@@ -82,7 +81,7 @@
 .menu__nav-link {
   color: var(--first-text-color);
   &:hover,
-  &:hover {
+  &:focus {
     color: var(--accent-color);
   }
 }
