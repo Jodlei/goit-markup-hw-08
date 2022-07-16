@@ -7,6 +7,7 @@
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     justify-content: center;
+    margin: 0;
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
@@ -15,7 +16,14 @@
 }
 
 .sorting__item {
-  margin: 8px;
+  @media screen and (max-width: 767.9px) {
+    margin: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
 .sorting__btn,
 .sorting__btn--current {

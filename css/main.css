@@ -1310,6 +1310,7 @@ img {
   .sorting__list {
     flex-wrap: nowrap;
     justify-content: center;
+    margin: 0;
     margin-bottom: 30px;
   }
 }
@@ -1319,8 +1320,15 @@ img {
   }
 }
 
-.sorting__item {
-  margin: 8px;
+@media screen and (max-width: 767.9px) {
+  .sorting__item {
+    margin: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sorting__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .sorting__btn,
